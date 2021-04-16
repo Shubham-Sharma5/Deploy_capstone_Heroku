@@ -3,6 +3,8 @@ from flask import Flask, jsonify, request, render_template
 import numpy as np
 import pandas as pd
 import pickle
+import nltk
+nltk.download('punkt', download_dir='/app/nltk_data/')
 
 app = Flask(__name__)
 
